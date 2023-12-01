@@ -3,11 +3,13 @@ public class Array{
     static int i,cal,size;
     
     public static void accept(){
-        Scanner sc=new Scanner(System.in);
+        Scanner sc=new Scanner(System.in);//Accept value from user
         System.out.println("enter the array size=");
         size=sc.nextInt();
         static int[] num=new int[size];
+        // Array
         System.out.println("Enter\t"+size+"\tNumber");
+        //Accepting the array numbers
         for(i=0;i<size;i++){
             num[i]=sc.nextInt();
         }
@@ -17,6 +19,7 @@ public class Array{
          }
     public static void Smallest(int num[]){
         cal=num[0];
+        //Display the Smallest value of the array
         for(i=0;i<size;i++){
             System.out.println("Number"+num[i]);
             if(num[i]<cal)
@@ -26,6 +29,7 @@ public class Array{
     System.out.println("The smallest number is="+cal);
     }
     public static void Ascending(int num[]){
+        //Display Ascending Array
         System.out.println("Array Element is Ascending Order");
         for (int i = 0; i < size; i++) {
             for (int j = i + 1; j < size; j++) {
@@ -40,6 +44,7 @@ public class Array{
         System.out.println();
     }
     public static void Decending(int num[]){
+        //Display Descending Array
         System.out.println("Array Element is Descending Order");
         for (int i = 0; i < size; i++) {
             for (int j = i + 1; j < size; j++) {
@@ -56,7 +61,7 @@ public class Array{
     
     
     public static void main(String[] args){
-        accept();
+        accept();//call the method
         
     }
      }
